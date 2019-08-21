@@ -1,4 +1,4 @@
-#Tensorflow 2 Example - Char74
+# Tensorflow 2 Example - Char74
 
 Install with: `pip3 install -r requirements.txt`
 
