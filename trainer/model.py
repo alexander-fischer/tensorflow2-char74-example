@@ -1,6 +1,7 @@
 import tensorflow as tf
 
 IMG_SHAPE = 20
+MODEL_DIR = "./models/"
 
 
 def create_model():
@@ -31,3 +32,7 @@ def create_model():
     print(model.summary())
 
     return model
+
+
+def save_model(model):
+    model.save(MODEL_DIR + "classifier.h5")

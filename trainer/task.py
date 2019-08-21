@@ -2,9 +2,9 @@ import tensorflow as tf
 
 import logging
 
-from trainer.data_loader import load_data
-from trainer.model import create_model
-from visualize.plot import plot_acc
+from data_loader import load_data
+from model import create_model, save_model
+from plot import plot_acc
 
 BATCH_SIZE = 32
 EPOCHS = 20
@@ -26,6 +26,8 @@ def train_and_evaluate():
     val_acc = history.history["val_accuracy"]
 
     plot_acc(EPOCHS, acc, val_acc)
+
+    save_model(model)
 
 
 if __name__ == "__main__":

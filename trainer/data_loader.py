@@ -2,7 +2,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 BATCH_SIZE = 32
 IMG_SHAPE = 20
-train_dir = "../data"
+train_dir = "./data"
 
 
 def load_data():
